@@ -6,7 +6,7 @@ The purpose of this online series is to develop an image classifier using  __[Te
 
 We will discuss why we need to log every single experiment and how to do it easily with __[MLflow](https://www.mlflow.org/)__ with 2-3 lines of code, and then we will use the advanced functions of MLflow to expand our knowledge.
 
-![](/home/kingeng/Desktop/codes/myGit_DLCourse/001-mosquito_develop_deploy/images/mlflow-shot.png)
+![](./images/mlflow-shot.png)
 
 Here are some questions we'll try to answer:
 
