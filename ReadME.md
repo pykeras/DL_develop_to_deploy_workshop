@@ -1,25 +1,15 @@
 ## Workshop on Deep Learning (develop to deploy for starters)
 
-* _Switch between branches in order to see all developed versions of code_
+### Optimization:
 
-The purpose of this online series is to develop an image classifier using  __[TensorFlow](https://www.tensorflow.org/)__ and __[Keras](https://keras.io/)__ on a funny dataset __[Mosquito-on-human-skin](https://data.mendeley.com/datasets/zw4p9kj6nt/2)__ we don't talk __MNIST__ here :D.
+__Post training quantization :__
 
-We will discuss why we need to log every single experiment and how to do it easily with __[MLflow](https://www.mlflow.org/)__ with 2-3 lines of code, and then we will use the advanced functions of MLflow to expand our knowledge.
+_Improve latency, reduce model size with a little degradation in model accuracy_
 
-![](./images/mlflow-shot.png)
+![](/home/kingeng/Desktop/codes/myGit_DLCourse/001-mosquito_develop_deploy/images/optimization_mehtods.png)
 
-Here are some questions we'll try to answer:
-
-- *MLflow: what is it? (Components, configuration, storage options, etc.)*
-- *Can you tell me why we need it? When and how do we use it?*
-- *Can you tell me what the benefits are?*
-
-_The next step is to deploy the model using either __MLflow Models__ or __Tensorflow Serving__, which are the two popular approaches._
-
-*A hands-on experience with basic optimization steps will be provided to help us understand why and when we need optimization.*
-
-*It would be nice if we had enough time to develop an __API__ (Application Programming Interface) using __[FastApi](https://fastapi.tiangolo.com/)__, and we would also need to use __[Docker](https://www.docker.com/)__ so that maintenance on production become as simple as possible.*
-
-*What's next? Could it be __TFX__?*
-
-__A basic understanding of deep learning and machine learning is required__
+* __Dynamic Range Quantization:__
+  * _Simplest form (90% of cases)_
+  * _Quantize only the weights from floating point to integer (8-bit)_
+  * _Inference :_ weights converted from $8$-bit to float (done once and cached to reduce latency)
+    * perform computations with $8$-bit weights and activations.
