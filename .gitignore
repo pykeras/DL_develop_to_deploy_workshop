@@ -2,4 +2,4 @@ dataset/
 mlflow/
 .ipynb_checkpoints/
 optimized/
-mlruns/
+mlruns/*
