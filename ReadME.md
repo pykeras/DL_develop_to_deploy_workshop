@@ -1,6 +1,7 @@
 ## Workshop on Deep Learning (develop to deploy for starters)
 
 * _Switch between branches in order to see all developed versions of code_
+### _Updated now you can check Optimization session codes (004-optimization branch)_
 
 The purpose of this online series is to develop an image classifier using  __[TensorFlow](https://www.tensorflow.org/)__ and __[Keras](https://keras.io/)__ on a funny dataset __[Mosquito-on-human-skin](https://data.mendeley.com/datasets/zw4p9kj6nt/2)__ we don't talk __MNIST__ here :D.
 
